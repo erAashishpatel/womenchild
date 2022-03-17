@@ -1,0 +1,41 @@
+<!----<div class="container">
+		<div class="container">
+			<div class="span12">
+			<div class="row">
+						
+							<div class="span12">
+								
+								<div id="myCarousel" class="myCarousel carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+<?php											
+			$con=mysqli_connect('localhost','root','','codelan');
+			$r1=mysqli_query($con,'select * from php');
+			while($row=mysqli_fetch_array($r1))
+			{
+				echo"<ul  class='thumbnails'  > 
+				<li class='span3'>
+				
+				<div class='product-box' style='margin-top:10px;'>
+						<span class='sale_tag' style='text-align: center'></span>
+							<h2><a href='#'>$row[1]</a></h2>
+									<a href='p_det.php?id=$row[0]' class='title'>$row[2]</a><br/>
+										<a href='p_det.php?id=$row[0]' class='category'>$row[3]</a>
+												<p class='price'>Rs.$row[5]</p>
+										</div>
+									</li>
+								</ul>";
+				
+			}
+			
+												?>
+
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>--->
